@@ -1,0 +1,21 @@
+extends layout/template
+
+block vars
+	- var bodySpecialClass = 'open-popup'
+
+block content
+	main.main
+		.popup.is-open
+			.popup__overlay
+			.popup__inner
+				.popup__layout
+					.popup__close-btn
+					.popup__content
+						.popup__wrap
+							span.popup__title
+								| Поздравляем!
+							p.popup__text
+								| Вы победили там-то, и вам полагается
+								| какой-то подарок
+
+							button.popup__btn.js-get-gift Получить
